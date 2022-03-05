@@ -1,12 +1,71 @@
+@charset "utf-8";
+
+/*
+   CIS 162 - HTML & CSS
+
+   Style Sheet for the Layout of the CIS 162 Project 1 Home Page
+   Author: Miles Shinmachi
+   Date: March 4, 2022
+
+   Filename: styles.css
+*/
+
+/* Body Styles */
 body {
-    background-color: #EFF6EE;
+    background-color: #CFD7C7;
     font-family: 'ZCOOL XiaoWei', serif;
 }
 
+/* Body Header Styles */
+body > header > img {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+}
+body > header > nav.horizontalNavigation li {
+    width: 20%;
+}
+
+/* Horizontal Navigation Styles */
+nav.horizontalNavigation li {
+    display: block;
+    float: left;
+    background-color: #70A9A1;
+    background-color: #40798C;
+
+}
+
+nav.horizontalNavigation a {
+    display: block;
+    text-align: center;
+    padding: 1.0em;
+    width: 50%
+    background-color: blue;
+}
+
+nav.horizontalNavigation a {
+   background-color: #70A9A1;
+   font-family: 'Redressed', cursive;
+   font-size: 1.4em;
+   line-height: 1.8em;
+   text-align: center;
+}
+
+nav.horizontalNavigation a:link,
+nav.horizontalNavigation a:visited {
+   color: rgb(0, 0, 0);
+}
+
+nav.horizontalNavigation a:hover,
+nav.horizontalNavigation a:active {
+    background-color: rgb(0, 54, 54) }
+
+/* Header Styles */
 header {
     background-color: #40798C;
 }
 
+/* Header1 and Header2 Styles */
 h1, h2 {
     color: black;
     background-color: #70A9A1;
@@ -14,21 +73,51 @@ h1, h2 {
     text-decoration: underline;
 }
 
+/* Body Styles */
+
 nav > ul {
     line-height: 2em;
     list-style-type: none;
-    padding-left: 15px;
+    padding-left: 50px;
+    margin: 0;
 }
 
 section {
     background-color: #CFD7C7;
-    width: 75%;
+    width: 70%;
     font-size: 1.0em;
 }
 
+/* Footer Styles */
 footer {
     background-color: #F6F1D1;
+    position: fluid;
     font-family: 'ZCOOL XiaoWei', serif;
     font-size: 1.0em;
-    text-bottom
+    bottom: 0px;
+    clear: left;
+}
+
+/* Left Column Styles */
+section#leftColumn {
+    clear: left;
+    float: left;
+    padding: 1.5em;
+    width: 56.3%;
+}
+
+/* Left Column Styles */
+section#leftColumn2 {
+    clear: left;
+    float: left;
+    padding: 1.5em;
+    width: 56.3%;
+}
+
+/* Right Column Styles */
+section#rightColumn {
+    clear: right;
+    float: right;
+    padding: 1.5em;
+    width: 38.2%;
 }
